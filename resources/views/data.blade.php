@@ -1,13 +1,15 @@
-@extends('layouts.navbar')
+@extends('layouts.main')
 
-@section('title', 'data halo')
+@section('title', 'Data Post')
 
 @foreach ($posts as $post)
 
 
-@section('content')
+@section('container')
+<ul>
     <li>{{ $post['name'] }}</li>
     <li>{{ $post['body'] }}</li>
+</ul>
 @endsection
 
 @endforeach
